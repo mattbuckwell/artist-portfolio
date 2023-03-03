@@ -3,7 +3,6 @@ body {
 }
 
 /* NavBar Section */
-
 .navbar {
     margin: 32px;
 }
@@ -38,8 +37,20 @@ a.active {
 }
 
 /* Image Gallery Section */
+.card {
+    /* inline-block has some white space in the html markup, using 50% will move all cards to 1 per row */
+    width: 49.75%;
+    display: inline-block;
+    /* margin and padding don't add to the size of the card using border-box */
+    box-sizing: border-box;
+    padding: 16px;
+}
 
-img {
-    width: 40%;
+.card img {
     height: 500px;
+    width: 100%;
+}
+
+.card h2 {
+    display: inline-block;
 }
