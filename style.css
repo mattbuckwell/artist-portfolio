@@ -37,6 +37,10 @@ a.active {
 }
 
 /* Image Gallery Section */
+.gallery {
+    padding: 16px;
+}
+
 .card {
     /* inline-block has some white space in the html markup, using 50% will move all cards to 1 per row */
     width: 49.75%;
@@ -49,8 +53,11 @@ a.active {
 .card img {
     height: 500px;
     width: 100%;
+    object-fit: cover;
 }
 
 .card h2 {
     display: inline-block;
+    margin: 8px 0 16px 0;
+    font-weight: 300;
 }
