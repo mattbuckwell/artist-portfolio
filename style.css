@@ -94,3 +94,31 @@ a.active {
     margin: 0;
     font-size: 20px;
 }
+
+/* Media Query */
+@media only screen and (max-width: 1000px) {
+    /* max-width is what you think breaks the look of the site */
+    .card {
+        width: 100%;
+    }
+
+    .about {
+        margin: 100px 0 100px 100px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* mobile version of site */
+    .card {
+        padding: 0;
+    }
+
+    .gallery {
+        padding: 8px;
+    }
+
+    .about {
+        min-width: 450px;
+        margin: 100px auto;
+    }
+}
